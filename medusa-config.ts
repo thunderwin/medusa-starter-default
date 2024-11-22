@@ -10,8 +10,7 @@ module.exports = defineConfig({
       adminCors: process.env.ADMIN_CORS!,
       authCors: process.env.AUTH_CORS!,
       jwtSecret: process.env.JWT_SECRET || "supersecret",
-      cookieSecret: process.env.COOKIE_SECRET || "supersecret",
-  
+      cookieSecret: process.env.COOKIE_SECRET || "supersecret"
     },
     admin:{
       disable: process.env.DISABLE_MEDUSA_ADMIN === "true",
